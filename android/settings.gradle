@@ -4,3 +4,5 @@ extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> ex.autoli
 rootProject.name = 'UsageTracker'
 include ':app'
 includeBuild('../node_modules/@react-native/gradle-plugin')
+include ':appusage'
+project(':appusage').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-app-usage/android')
